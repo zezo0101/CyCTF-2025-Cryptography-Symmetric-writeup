@@ -18,25 +18,3 @@ so the last block with padding is
 last flag block = "4292afb5a3e3ae}\x01"  
 
 """
-
-
-"""
-
-last block = "4292afb5a3e3ae}\x01"
-2block = "9c72ea815d3e34a5"
-1block = "CyCTF{8817602d84"
-
-FLAG = "CyCTF{8817602d859c72ea815d3e34a44292afb5a3e3ae}"
-
-
-toxicR = ""
-
-[FOUND] Response: 143
- pt = b'5\xce\xa8K\x86\x9d\xf7\xf8\xfea\xa15:\x0e\xc9=9c72ea815d3e34a'
- 
-[FOUND] Response: 254
- pt = b'\xba\xe4\xabJ \xe9,\x84\xf1f\xdb\xb7-$\xc3\x879c72ea815d3e34a'
-
-print(strxor(bytes.fromhex(toxicR[:2]), bytes.fromhex(toxic[2:])).hex())
-
-"""
